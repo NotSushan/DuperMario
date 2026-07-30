@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://btek4wkkrvrdg"]
+
+[ext_resource type="AudioStream" uid="uid://dgi1mpjtr7tla" path="res://Jammin Bread.mp3" id="1_fvyft"]
+
+[node name="MusicPlayer" type="AudioStreamPlayer" unique_id=1313898934]
+stream = ExtResource("1_fvyft")
+autoplay = true

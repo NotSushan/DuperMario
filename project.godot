@@ -11,12 +11,17 @@ config_version=5
 [application]
 
 config/name="Game 01"
-run/main_scene="uid://i44410s5y50f"
+run/main_scene="uid://56y86bqjrikh"
 config/features=PackedStringArray("4.7", "Forward Plus")
 
 [audio]
 
 buses/default_bus_layout="uid://dn78benvn87wt"
+
+[autoload]
+
+MusicPlayer="*uid://btek4wkkrvrdg"
+GameManager="*uid://b6uomp4rg5jnd"
 
 [display]
 

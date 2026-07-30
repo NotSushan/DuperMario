@@ -1,0 +1,173 @@
+[gd_scene format=3 uid="uid://ciakpk7vj4614"]
+
+[ext_resource type="Script" uid="uid://wy3du5lbdi20" path="res://pause_menu.gd" id="1_hdmo1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_usj0q"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nwcfo"]
+bg_color = Color(0.3376807, 0.673551, 0.673202, 1)
+corner_radius_top_left = 64
+corner_radius_top_right = 64
+corner_radius_bottom_right = 64
+corner_radius_bottom_left = 64
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_05uyy"]
+bg_color = Color(0.14072368, 0.33917457, 0.33940876, 1)
+corner_radius_top_left = 64
+corner_radius_top_right = 64
+corner_radius_bottom_right = 64
+corner_radius_bottom_left = 64
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p81d2"]
+bg_color = Color(0.18718165, 0.42788428, 0.42813623, 1)
+corner_radius_top_left = 64
+corner_radius_top_right = 64
+corner_radius_bottom_right = 64
+corner_radius_bottom_left = 64
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2nc7s"]
+bg_color = Color(0.3376807, 0.673551, 0.673202, 1)
+corner_radius_top_left = 64
+corner_radius_top_right = 64
+corner_radius_bottom_right = 64
+corner_radius_bottom_left = 64
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hdmo1"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 32
+corner_radius_top_right = 32
+corner_radius_bottom_right = 32
+corner_radius_bottom_left = 32
+shadow_size = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_d3xb4"]
+bg_color = Color(0.24115604, 0.24115604, 0.24115601, 1)
+corner_radius_top_left = 32
+corner_radius_top_right = 32
+corner_radius_bottom_right = 32
+corner_radius_bottom_left = 32
+shadow_size = 5
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mxa3g"]
+bg_color = Color(0.4630682, 0.4630682, 0.4630682, 1)
+corner_radius_top_left = 32
+corner_radius_top_right = 32
+corner_radius_bottom_right = 32
+corner_radius_bottom_left = 32
+shadow_size = 5
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_e8sti"]
+
+[node name="PauseMenu" type="CanvasLayer" unique_id=798773260]
+process_mode = 3
+script = ExtResource("1_hdmo1")
+
+[node name="Panel" type="Panel" parent="." unique_id=905375625]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_usj0q")
+
+[node name="Button" type="Button" parent="Panel" unique_id=2084051224]
+layout_mode = 0
+offset_left = 1085.0
+offset_top = 12.0
+offset_right = 1141.0
+offset_bottom = 69.0
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("StyleBoxFlat_nwcfo")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_05uyy")
+theme_override_styles/hover = SubResource("StyleBoxFlat_p81d2")
+theme_override_styles/focus = SubResource("StyleBoxFlat_2nc7s")
+text = "||"
+
+[node name="Panel2" type="Panel" parent="." unique_id=1330370959]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -225.5
+offset_top = -177.5
+offset_right = 225.5
+offset_bottom = 177.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel2" unique_id=1413651263]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 67.5
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 30
+text = "Game Paused"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PauseButtons" type="VBoxContainer" parent="Panel2" unique_id=1008904475]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -153.0
+offset_top = -108.5
+offset_right = 168.0
+offset_bottom = 128.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Resume" type="Button" parent="Panel2/PauseButtons" unique_id=104496952]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_hdmo1")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_d3xb4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mxa3g")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_e8sti")
+text = "Resume
+
+"
+
+[node name="MainMenu" type="Button" parent="Panel2/PauseButtons" unique_id=1057342454]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_hdmo1")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_d3xb4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mxa3g")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_e8sti")
+text = "Main Menu
+"
+
+[node name="Exit" type="Button" parent="Panel2/PauseButtons" unique_id=1609294505]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_hdmo1")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_d3xb4")
+theme_override_styles/hover = SubResource("StyleBoxFlat_mxa3g")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_e8sti")
+text = "Exit
+"
+
+[connection signal="pressed" from="Panel/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Panel2/PauseButtons/Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="Panel2/PauseButtons/MainMenu" to="." method="_on_main_menu_pressed"]
+[connection signal="pressed" from="Panel2/PauseButtons/Exit" to="." method="_on_exit_pressed"]

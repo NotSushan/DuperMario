@@ -4,9 +4,10 @@
 [ext_resource type="Texture2D" uid="uid://inggx8d4qxj7" path="res://Terrain/Terrain (16x16).png" id="2_8i3m3"]
 [ext_resource type="PackedScene" uid="uid://tcmxkkqdm1n4" path="res://scenes/main_character.tscn" id="3_rmy57"]
 [ext_resource type="PackedScene" uid="uid://utgxg0vbmhts" path="res://scenes/collectibles.tscn" id="4_qulpo"]
-[ext_resource type="PackedScene" uid="uid://i44410s5y50f" path="res://scenes/main_menu.tscn" id="5_8i3m3"]
 [ext_resource type="PackedScene" uid="uid://b7dwrjwsvoxfo" path="res://scenes/finish.tscn" id="5_jifot"]
+[ext_resource type="PackedScene" uid="uid://ddsxg2khe5n5g" path="res://victory1.tscn" id="5_rmy57"]
 [ext_resource type="Script" uid="uid://b6uomp4rg5jnd" path="res://game_manager.gd" id="6_3opl0"]
+[ext_resource type="PackedScene" uid="uid://ciakpk7vj4614" path="res://pause_menu.tscn" id="8_rmy57"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e2u21"]
 texture = ExtResource("2_8i3m3")
@@ -231,9 +232,10 @@ position = Vector2(156, 259)
 position_smoothing_enabled = true
 position_smoothing_speed = 7.0
 
-[node name="Finish" parent="Scene Objects" unique_id=1134903558 instance=ExtResource("5_jifot")]
+[node name="Finish2" parent="Scene Objects" unique_id=1134903558 instance=ExtResource("5_jifot")]
 position = Vector2(2378, 146)
-target_level = ExtResource("5_8i3m3")
+target_level = ExtResource("5_rmy57")
+total_points = 28
 
 [node name="Collectables group" type="Node" parent="Scene Objects" unique_id=757996416]
 
@@ -283,6 +285,8 @@ position = Vector2(2230, 83)
 unique_name_in_owner = true
 script = ExtResource("6_3opl0")
 
+[node name="PauseMenu" parent="." unique_id=798773260 instance=ExtResource("8_rmy57")]
+
 [node name="UI" type="CanvasLayer" parent="." unique_id=1743311112]
 
 [node name="Panel" type="Panel" parent="UI" unique_id=1593552768]
@@ -304,4 +308,4 @@ text = "Points : 0"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[connection signal="body_entered" from="Scene Objects/Finish" to="Scene Objects/CharacterBody2D" method="_on_area_2d_body_entered"]
+[connection signal="body_entered" from="Scene Objects/Finish2" to="Scene Objects/CharacterBody2D" method="_on_area_2d_body_entered"]

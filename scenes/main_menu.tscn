@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://i44410s5y50f"]
 
-[ext_resource type="Script" uid="uid://brptvb025cnj4" path="res://scenes/main_menu.gd" id="1_bqqt6"]
-[ext_resource type="Texture2D" uid="uid://bxe4dbx1ks8ke" path="res://Screenshot (475).png" id="2_wu84c"]
-[ext_resource type="Texture2D" uid="uid://dqxhvm3dk3jt1" path="res://cooltext512935582895056.png" id="3_wu84c"]
-[ext_resource type="Script" uid="uid://cuvmobikatyps" path="res://scenes/button.gd" id="4_wu84c"]
+[ext_resource type="Script" uid="uid://padrs4vsjo62" path="res://scripts/main_menu.gd" id="1_bqqt6"]
+[ext_resource type="Texture2D" uid="uid://bxe4dbx1ks8ke" path="res://Other/Screenshot (475).png" id="2_wu84c"]
+[ext_resource type="Texture2D" uid="uid://dqxhvm3dk3jt1" path="res://Other/cooltext512935582895056.png" id="3_wu84c"]
+[ext_resource type="Script" uid="uid://cdhjqh1itavch" path="res://scripts/button.gd" id="4_wu84c"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5dgg1"]
 texture = ExtResource("2_wu84c")
@@ -166,4 +166,5 @@ script = ExtResource("4_wu84c")
 
 [connection signal="pressed" from="level1" to="." method="_on_level_1_pressed"]
 [connection signal="pressed" from="level2" to="." method="_on_level_2_pressed"]
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button" to="Button" method="_on_back_pressed"]

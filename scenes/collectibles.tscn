@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://utgxg0vbmhts"]
 
 [ext_resource type="Texture2D" uid="uid://2xnylfbdp60l" path="res://Items/Fruits/Cherries.png" id="1_mtlde"]
-[ext_resource type="Script" uid="uid://b2ouifyu4j44o" path="res://scenes/collectibles.gd" id="1_rms2y"]
+[ext_resource type="Script" uid="uid://cql2ru407057k" path="res://scripts/collectibles.gd" id="1_rms2y"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_67y4a"]
 atlas = ExtResource("1_mtlde")

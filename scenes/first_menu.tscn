@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://56y86bqjrikh"]
 
-[ext_resource type="Script" uid="uid://bio2fykmmkfrs" path="res://first_menu.gd" id="1_oesg4"]
-[ext_resource type="Texture2D" uid="uid://bxe4dbx1ks8ke" path="res://Screenshot (475).png" id="1_tr1eg"]
+[ext_resource type="Script" uid="uid://ue0j46stlig1" path="res://scripts/first_menu.gd" id="1_e17if"]
+[ext_resource type="Texture2D" uid="uid://bxe4dbx1ks8ke" path="res://Other/Screenshot (475).png" id="1_tr1eg"]
 [ext_resource type="Texture2D" uid="uid://b34qh3emi4x6g" path="res://Other/cooltext512888396778768.png" id="2_oesg4"]
-[ext_resource type="Script" uid="uid://bxagygcx0oos5" path="res://audio_control.gd" id="5_vqc2j"]
-[ext_resource type="Script" uid="uid://b5m6l0amayt4k" path="res://fullscreen_control.gd" id="6_vqc2j"]
+[ext_resource type="Script" uid="uid://bdnpi3gd0ke8e" path="res://scripts/audio_control.gd" id="3_ejg1c"]
+[ext_resource type="Script" uid="uid://buxtoblaj21g" path="res://fullscreen_control.gd" id="6_vqc2j"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5dgg1"]
 texture = ExtResource("1_tr1eg")
@@ -54,7 +54,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_oesg4")
+script = ExtResource("1_e17if")
 
 [node name="Panel" type="Panel" parent="." unique_id=116882577]
 layout_mode = 1
@@ -123,21 +123,6 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_w61hn")
 text = "Exit
 "
 
-[node name="Panel2" type="Panel" parent="." unique_id=791494396]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -365.0
-offset_top = -258.0
-offset_right = 411.0
-offset_bottom = -129.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxTexture_l8guw")
-
 [node name="Options" type="Panel" parent="." unique_id=1021961982]
 layout_mode = 1
 anchors_preset = 8
@@ -151,6 +136,21 @@ offset_right = 297.5
 offset_bottom = 235.5
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Panel2" type="Panel" parent="Options" unique_id=791494396]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -369.25
+offset_top = -301.25
+offset_right = 406.75
+offset_bottom = -172.25
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_l8guw")
 
 [node name="Label" type="Label" parent="Options" unique_id=1796417292]
 layout_mode = 1
@@ -200,10 +200,9 @@ theme_override_styles/slider = SubResource("StyleBoxLine_5dgg1")
 theme_override_styles/grabber_area = SubResource("StyleBoxLine_l8guw")
 theme_override_styles/grabber_area_highlight = SubResource("StyleBoxLine_l8guw")
 max_value = 1.0
-step = 0.05
-value = 1.0
-script = ExtResource("5_vqc2j")
-audio_bus_name = "Music"
+step = 0.1
+value = 0.8
+script = ExtResource("3_ejg1c")
 
 [node name="FullscreenControl" type="CheckButton" parent="Options" unique_id=1705298437]
 layout_mode = 0
@@ -216,8 +215,12 @@ text = "Fullscreen"
 script = ExtResource("6_vqc2j")
 
 [connection signal="pressed" from="MainButtons/Button" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="MainButtons/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="MainButtons/Button2" to="." method="_on_button_2_pressed"]
 [connection signal="pressed" from="MainButtons/Button2" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="MainButtons/Button3" to="." method="_on_button_3_pressed"]
 [connection signal="pressed" from="MainButtons/Button3" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="Options/Back" to="." method="_on_back_pressed"]
 [connection signal="pressed" from="Options/Back" to="." method="_on_back_options_pressed"]
 [connection signal="value_changed" from="Options/AudioControl" to="Options/AudioControl" method="_on_value_changed"]
 [connection signal="toggled" from="Options/FullscreenControl" to="Options/FullscreenControl" method="_on_toggled"]

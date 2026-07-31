@@ -1,9 +1,8 @@
-[gd_scene format=3 uid="uid://ddsxg2khe5n5g"]
+[gd_scene format=3 uid="uid://cin0ivcjwa4mk"]
 
-[ext_resource type="Script" uid="uid://bv57j7ucknycw" path="res://victory1.gd" id="1_d823e"]
-[ext_resource type="PackedScene" uid="uid://dtwky3njdjhoj" path="res://level2.tscn" id="2_tt3xy"]
-[ext_resource type="Texture2D" uid="uid://bdhxp5l47tftg" path="res://Gemini_Generated_Image_eik5x0eik5x0eik5.jpeg" id="2_w7koe"]
-[ext_resource type="Texture2D" uid="uid://drjfyidxwvgy1" path="res://Cool Text - Victory 512932839600344.png" id="3_tt3xy"]
+[ext_resource type="Script" uid="uid://0shn60x8orb7" path="res://scenes/victory_2.gd" id="1_ogt3h"]
+[ext_resource type="Texture2D" uid="uid://bdhxp5l47tftg" path="res://Other/Gemini_Generated_Image_eik5x0eik5x0eik5.jpeg" id="2_xw4i6"]
+[ext_resource type="Texture2D" uid="uid://drjfyidxwvgy1" path="res://Other/Cool Text - Victory 512932839600344.png" id="3_c5r2b"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_flqon"]
 bg_color = Color(0.6818062, 0.99999994, 0.6772122, 1)
@@ -40,9 +39,8 @@ corner_radius_top_right = 32
 corner_radius_bottom_right = 32
 corner_radius_bottom_left = 32
 
-[node name="Victory1" type="Node2D" unique_id=1181838058]
-script = ExtResource("1_d823e")
-next_level = ExtResource("2_tt3xy")
+[node name="Victory2" type="Node2D" unique_id=1181838058]
+script = ExtResource("1_ogt3h")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1874282985]
 anchors_preset = 8
@@ -56,7 +54,7 @@ offset_right = 1214.0
 offset_bottom = 732.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_w7koe")
+texture = ExtResource("2_xw4i6")
 stretch_mode = 1
 
 [node name="TextureRect2" type="TextureRect" parent="." unique_id=1064790745]
@@ -64,7 +62,7 @@ offset_left = 341.0
 offset_top = 11.0
 offset_right = 801.0
 offset_bottom = 213.0
-texture = ExtResource("3_tt3xy")
+texture = ExtResource("3_c5r2b")
 
 [node name="PlayAgain" type="Button" parent="." unique_id=334786144]
 offset_left = 256.0

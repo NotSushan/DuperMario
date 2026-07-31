@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://tcmxkkqdm1n4"]
 
-[ext_resource type="Script" uid="uid://daljvve1ljv4s" path="res://scenes/main_character.gd" id="1_ig48j"]
+[ext_resource type="Script" uid="uid://dnmt7qg8ada4e" path="res://scripts/main_character.gd" id="1_ig48j"]
 [ext_resource type="Texture2D" uid="uid://ny3u304rcvfq" path="res://Main Characters/Ninja Frog/Jump (32x32).png" id="1_nrcqd"]
 [ext_resource type="Texture2D" uid="uid://bayenysgeiqy8" path="res://Main Characters/Ninja Frog/Idle (32x32).png" id="2_tqm6u"]
 [ext_resource type="Texture2D" uid="uid://6a027lufj7x4" path="res://Main Characters/Ninja Frog/Run (32x32).png" id="3_e6tc2"]

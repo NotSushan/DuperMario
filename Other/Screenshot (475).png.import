@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://drjfyidxwvgy1"
-path="res://.godot/imported/Cool Text - Victory 512932839600344.png-64ebd454a6a2c37ccde37e89c1c3d856.ctex"
+uid="uid://bxe4dbx1ks8ke"
+path="res://.godot/imported/Screenshot (475).png-87a279ddd05960e9952e7c3d8a7db50b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Cool Text - Victory 512932839600344.png"
-dest_files=["res://.godot/imported/Cool Text - Victory 512932839600344.png-64ebd454a6a2c37ccde37e89c1c3d856.ctex"]
+source_file="res://Other/Screenshot (475).png"
+dest_files=["res://.godot/imported/Screenshot (475).png-87a279ddd05960e9952e7c3d8a7db50b.ctex"]
 
 [params]
 

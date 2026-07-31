@@ -5,8 +5,8 @@
 [ext_resource type="PackedScene" uid="uid://tcmxkkqdm1n4" path="res://scenes/main_character.tscn" id="3_xy4tn"]
 [ext_resource type="PackedScene" uid="uid://utgxg0vbmhts" path="res://scenes/collectibles.tscn" id="4_usj0q"]
 [ext_resource type="PackedScene" uid="uid://b7dwrjwsvoxfo" path="res://scenes/finish.tscn" id="5_5j5gb"]
-[ext_resource type="PackedScene" uid="uid://ddsxg2khe5n5g" path="res://victory1.tscn" id="6_xy4tn"]
-[ext_resource type="PackedScene" uid="uid://ciakpk7vj4614" path="res://pause_menu.tscn" id="8_xy4tn"]
+[ext_resource type="PackedScene" uid="uid://ddsxg2khe5n5g" path="res://scenes/victory1.tscn" id="6_xy4tn"]
+[ext_resource type="PackedScene" uid="uid://ciakpk7vj4614" path="res://scenes/pause_menu.tscn" id="8_xy4tn"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_e2u21"]
 texture = ExtResource("2_i2041")
@@ -215,45 +215,59 @@ position_smoothing_speed = 7.0
 
 [node name="Collectibles" parent="Scene Objects/Collectibles" unique_id=1583679064 instance=ExtResource("4_usj0q")]
 position = Vector2(59, 138)
+point_value = null
 
 [node name="Collectibles2" parent="Scene Objects/Collectibles" unique_id=221997735 instance=ExtResource("4_usj0q")]
 position = Vector2(280, 421)
+point_value = null
 
 [node name="Collectibles3" parent="Scene Objects/Collectibles" unique_id=131790303 instance=ExtResource("4_usj0q")]
 position = Vector2(482, 375)
+point_value = null
 
 [node name="Collectibles4" parent="Scene Objects/Collectibles" unique_id=271540021 instance=ExtResource("4_usj0q")]
 position = Vector2(720, 376)
+point_value = null
 
 [node name="Collectibles5" parent="Scene Objects/Collectibles" unique_id=429663432 instance=ExtResource("4_usj0q")]
 position = Vector2(1042, 239)
+point_value = null
 
 [node name="Collectibles6" parent="Scene Objects/Collectibles" unique_id=1299915428 instance=ExtResource("4_usj0q")]
 position = Vector2(1431, 421)
+point_value = null
 
 [node name="Collectibles7" parent="Scene Objects/Collectibles" unique_id=1411916544 instance=ExtResource("4_usj0q")]
 position = Vector2(1867, 424)
+point_value = null
 
 [node name="Collectibles8" parent="Scene Objects/Collectibles" unique_id=988479819 instance=ExtResource("4_usj0q")]
 position = Vector2(2072, 283)
+point_value = null
 
 [node name="Collectibles9" parent="Scene Objects/Collectibles" unique_id=1459981345 instance=ExtResource("4_usj0q")]
 position = Vector2(211, 43)
+point_value = null
 
 [node name="Collectibles10" parent="Scene Objects/Collectibles" unique_id=339402642 instance=ExtResource("4_usj0q")]
 position = Vector2(2169, -55)
+point_value = null
 
 [node name="Collectibles11" parent="Scene Objects/Collectibles" unique_id=1770866684 instance=ExtResource("4_usj0q")]
 position = Vector2(1372, 89)
+point_value = null
 
 [node name="Collectibles12" parent="Scene Objects/Collectibles" unique_id=492538757 instance=ExtResource("4_usj0q")]
 position = Vector2(1073, -5)
+point_value = null
 
 [node name="Collectibles13" parent="Scene Objects/Collectibles" unique_id=272364144 instance=ExtResource("4_usj0q")]
 position = Vector2(649, 89)
+point_value = null
 
 [node name="Collectibles14" parent="Scene Objects/Collectibles" unique_id=228359503 instance=ExtResource("4_usj0q")]
 position = Vector2(1684, 40)
+point_value = null
 
 [node name="Finish1" parent="Scene Objects" unique_id=1134903558 instance=ExtResource("5_5j5gb")]
 position = Vector2(20, 148)

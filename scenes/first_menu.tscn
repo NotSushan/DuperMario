@@ -171,6 +171,7 @@ horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Back" type="Button" parent="Options" unique_id=889983154]
+texture_filter = 1
 layout_mode = 0
 offset_left = 99.0
 offset_top = 304.0
@@ -189,6 +190,7 @@ theme_override_styles/focus = SubResource("StyleBoxEmpty_w61hn")
 text = "Back
 
 "
+expand_icon = true
 
 [node name="AudioControl" type="HSlider" parent="Options" unique_id=374302220]
 layout_mode = 0
@@ -216,11 +218,11 @@ script = ExtResource("6_vqc2j")
 
 [connection signal="pressed" from="MainButtons/Button" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="MainButtons/Button" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="MainButtons/Button2" to="." method="_on_button_2_pressed"]
 [connection signal="pressed" from="MainButtons/Button2" to="." method="_on_options_pressed"]
-[connection signal="pressed" from="MainButtons/Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="MainButtons/Button2" to="." method="_on_button_2_pressed"]
 [connection signal="pressed" from="MainButtons/Button3" to="." method="_on_exit_pressed"]
-[connection signal="pressed" from="Options/Back" to="." method="_on_back_pressed"]
+[connection signal="pressed" from="MainButtons/Button3" to="." method="_on_button_3_pressed"]
 [connection signal="pressed" from="Options/Back" to="." method="_on_back_options_pressed"]
+[connection signal="pressed" from="Options/Back" to="." method="_on_back_pressed"]
 [connection signal="value_changed" from="Options/AudioControl" to="Options/AudioControl" method="_on_value_changed"]
 [connection signal="toggled" from="Options/FullscreenControl" to="Options/FullscreenControl" method="_on_toggled"]

@@ -5,7 +5,7 @@ extends Node2D
 
 func _ready() -> void:
 	get_tree().paused = false
-	label.text = str(GameManager.points) + "/" + str(GameManager.total_points) + " Points Collected"
+	label.text = str(GameManager.points) + " Points Collected"
 
 # Connected to your Next button signal
 func _on_next_pressed() -> void:

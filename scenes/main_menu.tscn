@@ -2,8 +2,10 @@
 
 [ext_resource type="Script" uid="uid://padrs4vsjo62" path="res://scripts/main_menu.gd" id="1_bqqt6"]
 [ext_resource type="Texture2D" uid="uid://bxe4dbx1ks8ke" path="res://Other/Screenshot (475).png" id="2_wu84c"]
-[ext_resource type="Texture2D" uid="uid://dqxhvm3dk3jt1" path="res://Other/cooltext512935582895056.png" id="3_wu84c"]
+[ext_resource type="Texture2D" uid="uid://b2ohpo5v0wfxf" path="res://Other/Cool Text - Levels 513058065584612.png" id="3_rtw2f"]
+[ext_resource type="Texture2D" uid="uid://cd0kjlpd7qnvl" path="res://Menu/Levels/01.png" id="4_rtw2f"]
 [ext_resource type="Script" uid="uid://cdhjqh1itavch" path="res://scripts/button.gd" id="4_wu84c"]
+[ext_resource type="Texture2D" uid="uid://dnd7navc8vi84" path="res://Menu/Levels/02.png" id="5_oa1go"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5dgg1"]
 texture = ExtResource("2_wu84c")
@@ -109,18 +111,19 @@ offset_right = 334.0
 offset_bottom = -142.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("3_wu84c")
+texture = ExtResource("3_rtw2f")
 
 [node name="level1" type="Button" parent="." unique_id=409096853]
+texture_filter = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -311.0
-offset_top = -116.0
-offset_right = -50.0
-offset_bottom = -34.0
+offset_left = -378.0
+offset_top = -132.0
+offset_right = -228.0
+offset_bottom = 7.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
@@ -129,18 +132,20 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_8ln24")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_bqqt6")
 theme_override_styles/hover = SubResource("StyleBoxFlat_wu84c")
 theme_override_styles/focus = SubResource("StyleBoxFlat_8ln24")
-text = "Level 1 "
+icon = ExtResource("4_rtw2f")
+expand_icon = true
 
 [node name="level2" type="Button" parent="." unique_id=808220971]
+texture_filter = 1
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 29.0
-offset_top = -112.0
-offset_right = 290.0
-offset_bottom = -30.0
+offset_left = -208.0
+offset_top = -133.0
+offset_right = -69.0
+offset_bottom = 2.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
@@ -149,7 +154,9 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_gssvs")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_rtw2f")
 theme_override_styles/hover = SubResource("StyleBoxFlat_oa1go")
 theme_override_styles/focus = SubResource("StyleBoxFlat_tbmy8")
-text = "Level 2"
+icon = ExtResource("5_oa1go")
+icon_alignment = 1
+expand_icon = true
 
 [node name="Button" type="Button" parent="." unique_id=253744863]
 offset_left = 24.0

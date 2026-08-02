@@ -1,23 +1,35 @@
 extends Node
 
-@export var hearts : Array[Node]
-
 var points: int = 0
 var total_points: int = 0
-var lives = 3 
-
+var lives = 3
+var hearts: Array[Node] = []
+var can_take_damage = true
 
 func decrease_health():
+	if not can_take_damage:
+		return
+	can_take_damage = false
+
 	lives -= 1
 	print(lives)
 	for h in 3:
 		if (h < lives):
 			hearts[h].show()
 		else:
-				hearts[h].hide()
-	if lives == 0:
-		get_tree().reload_current_scene()
+			hearts[h].hide()
 
+	if lives <= 0:
+		reset_stats()
+		get_tree().reload_current_scene()
+		return
+
+	await get_tree().create_timer(1.0).timeout
+	can_take_damage = true
+
+func reset_stats():
+	lives = 3
+	can_take_damage = true
 	
 	
 func add_point(amount: int = 1) -> void:

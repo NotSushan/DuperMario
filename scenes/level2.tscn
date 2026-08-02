@@ -1,11 +1,11 @@
 [gd_scene format=4 uid="uid://dtwky3njdjhoj"]
 
-[ext_resource type="Texture2D" uid="uid://c4gmxg0i23d1b" path="res://Background/Yellow.png" id="1_21xmu"]
+[ext_resource type="Texture2D" uid="uid://bolordc16laq" path="res://Background/treees.png" id="1_xa7n4"]
 [ext_resource type="Texture2D" uid="uid://inggx8d4qxj7" path="res://Terrain/Terrain (16x16).png" id="2_8i3m3"]
 [ext_resource type="PackedScene" uid="uid://tcmxkkqdm1n4" path="res://scenes/main_character.tscn" id="3_rmy57"]
 [ext_resource type="PackedScene" uid="uid://utgxg0vbmhts" path="res://scenes/collectibles.tscn" id="4_qulpo"]
-[ext_resource type="PackedScene" uid="uid://cin0ivcjwa4mk" path="res://scenes/victory_2.tscn" id="5_hrcei"]
 [ext_resource type="PackedScene" uid="uid://b7dwrjwsvoxfo" path="res://scenes/finish.tscn" id="5_jifot"]
+[ext_resource type="Script" uid="uid://d0yeemx6q61a0" path="res://scenes/finish2.gd" id="5_xa7n4"]
 [ext_resource type="Script" uid="uid://df5x13mi8j2ui" path="res://scripts/game_manager.gd" id="6_3opl0"]
 [ext_resource type="PackedScene" uid="uid://ciakpk7vj4614" path="res://scenes/pause_menu.tscn" id="8_rmy57"]
 [ext_resource type="Texture2D" uid="uid://ce1viv1rpyiqk" path="res://Other/love-always-wins.png" id="9_xa7n4"]
@@ -215,11 +215,14 @@ sources/0 = SubResource("TileSetAtlasSource_e2u21")
 
 [node name="TextureRect" type="TextureRect" parent="Scene Objects" unique_id=406049006]
 texture_filter = 1
-offset_right = 2462.0
-offset_bottom = 671.0
+offset_left = -31.0
+offset_top = -30.0
+offset_right = 2487.0
+offset_bottom = 700.0
 size_flags_horizontal = 0
-texture = ExtResource("1_21xmu")
-stretch_mode = 1
+texture = ExtResource("1_xa7n4")
+expand_mode = 2
+stretch_mode = 6
 
 [node name="Layer0" type="TileMapLayer" parent="Scene Objects" unique_id=389226303]
 texture_filter = 1
@@ -237,8 +240,7 @@ position_smoothing_speed = 7.0
 
 [node name="Finish2" parent="Scene Objects" unique_id=1134903558 instance=ExtResource("5_jifot")]
 position = Vector2(2378, 146)
-target_level = ExtResource("5_hrcei")
-total_points = 28
+script = ExtResource("5_xa7n4")
 
 [node name="Collectables group" type="Node" parent="Scene Objects" unique_id=757996416]
 

@@ -1,11 +1,10 @@
 [gd_scene format=4 uid="uid://cbp7gqa2sw2g4"]
 
-[ext_resource type="Texture2D" uid="uid://cdy5m1ua8pr0a" path="res://Background/Green.png" id="1_crycw"]
+[ext_resource type="Texture2D" uid="uid://bt62fbii15u12" path="res://Background/mountain.png" id="1_bbk5w"]
 [ext_resource type="Texture2D" uid="uid://inggx8d4qxj7" path="res://Terrain/Terrain (16x16).png" id="2_i2041"]
 [ext_resource type="PackedScene" uid="uid://tcmxkkqdm1n4" path="res://scenes/main_character.tscn" id="3_xy4tn"]
 [ext_resource type="PackedScene" uid="uid://utgxg0vbmhts" path="res://scenes/collectibles.tscn" id="4_usj0q"]
 [ext_resource type="PackedScene" uid="uid://b7dwrjwsvoxfo" path="res://scenes/finish.tscn" id="5_5j5gb"]
-[ext_resource type="PackedScene" uid="uid://ddsxg2khe5n5g" path="res://scenes/victory1.tscn" id="6_xy4tn"]
 [ext_resource type="Texture2D" uid="uid://ce1viv1rpyiqk" path="res://Other/love-always-wins.png" id="7_bbk5w"]
 [ext_resource type="PackedScene" uid="uid://dko6ahg30ligp" path="res://scenes/enemy.tscn" id="7_conm7"]
 [ext_resource type="PackedScene" uid="uid://ciakpk7vj4614" path="res://scenes/pause_menu.tscn" id="8_xy4tn"]
@@ -194,10 +193,13 @@ bg_color = Color(0.46153063, 0.6707142, 0.6709265, 1)
 
 [node name="TextureRect" type="TextureRect" parent="Scene Objects" unique_id=406049006]
 texture_filter = 1
-offset_right = 2313.0
-offset_bottom = 652.0
+offset_left = -42.0
+offset_top = -48.0
+offset_right = 2340.0
+offset_bottom = 663.0
 size_flags_horizontal = 0
-texture = ExtResource("1_crycw")
+texture = ExtResource("1_bbk5w")
+expand_mode = 1
 stretch_mode = 1
 
 [node name="Layer0" type="TileMapLayer" parent="Scene Objects" unique_id=389226303]
@@ -275,7 +277,6 @@ point_value = null
 
 [node name="Finish1" parent="Scene Objects" unique_id=1134903558 instance=ExtResource("5_5j5gb")]
 position = Vector2(20, 148)
-target_level = ExtResource("6_xy4tn")
 
 [node name="Enemies" type="Node" parent="Scene Objects" unique_id=323263082]
 

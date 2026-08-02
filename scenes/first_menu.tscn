@@ -4,11 +4,14 @@
 [ext_resource type="Texture2D" uid="uid://bxe4dbx1ks8ke" path="res://Other/Screenshot (475).png" id="1_tr1eg"]
 [ext_resource type="Texture2D" uid="uid://b34qh3emi4x6g" path="res://Other/cooltext512888396778768.png" id="2_oesg4"]
 [ext_resource type="Script" uid="uid://bdnpi3gd0ke8e" path="res://scripts/audio_control.gd" id="3_ejg1c"]
-[ext_resource type="Script" uid="uid://buxtoblaj21g" path="res://fullscreen_control.gd" id="6_vqc2j"]
+[ext_resource type="Script" uid="uid://buxtoblaj21g" path="res://scripts/fullscreen_control.gd" id="6_vqc2j"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5dgg1"]
 texture = ExtResource("1_tr1eg")
 modulate_color = Color(0.5963672, 0.59636724, 0.59636724, 1)
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_l8guw"]
+texture = ExtResource("2_oesg4")
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5dgg1"]
 bg_color = Color(1, 1, 1, 1)
@@ -36,9 +39,6 @@ shadow_size = 5
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w61hn"]
 
-[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_l8guw"]
-texture = ExtResource("2_oesg4")
-
 [sub_resource type="StyleBoxLine" id="StyleBoxLine_5dgg1"]
 color = Color(1, 1, 1, 1)
 thickness = 6
@@ -64,6 +64,21 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxTexture_5dgg1")
+
+[node name="Panel2" type="Panel" parent="." unique_id=791494396]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -365.0
+offset_top = -258.0
+offset_right = 411.0
+offset_bottom = -129.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_l8guw")
 
 [node name="MainButtons" type="VBoxContainer" parent="." unique_id=1620901245]
 layout_mode = 1
@@ -136,21 +151,6 @@ offset_right = 297.5
 offset_bottom = 235.5
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="Panel2" type="Panel" parent="Options" unique_id=791494396]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -369.25
-offset_top = -301.25
-offset_right = 406.75
-offset_bottom = -172.25
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_styles/panel = SubResource("StyleBoxTexture_l8guw")
 
 [node name="Label" type="Label" parent="Options" unique_id=1796417292]
 layout_mode = 1

@@ -1,0 +1,107 @@
+[gd_scene format=3 uid="uid://de7i7cnpoqa70"]
+
+[ext_resource type="Script" uid="uid://moqewjuwfc5u" path="res://scripts/victory3.gd" id="1_7w0jc"]
+[ext_resource type="Texture2D" uid="uid://bdhxp5l47tftg" path="res://Other/Gemini_Generated_Image_eik5x0eik5x0eik5.jpeg" id="2_bcy1w"]
+[ext_resource type="Texture2D" uid="uid://drjfyidxwvgy1" path="res://Other/Cool Text - Victory 512932839600344.png" id="3_sp6w6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_flqon"]
+bg_color = Color(0.6818062, 0.99999994, 0.6772122, 1)
+corner_radius_top_left = 48
+corner_radius_top_right = 48
+corner_radius_bottom_right = 48
+corner_radius_bottom_left = 48
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_15ee3"]
+bg_color = Color(7.983688e-06, 0.30184415, 0.041690536, 1)
+corner_radius_top_left = 48
+corner_radius_top_right = 48
+corner_radius_bottom_right = 48
+corner_radius_bottom_left = 48
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u1yty"]
+bg_color = Color(3.5785215e-05, 0.64952046, 0.13589424, 1)
+corner_radius_top_left = 48
+corner_radius_top_right = 48
+corner_radius_bottom_right = 48
+corner_radius_bottom_left = 48
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_msd2c"]
+bg_color = Color(0.6818062, 0.99999994, 0.6772122, 1)
+corner_radius_top_left = 48
+corner_radius_top_right = 48
+corner_radius_bottom_right = 48
+corner_radius_bottom_left = 48
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5dgg1"]
+bg_color = Color(0.41851768, 0.71050686, 0.61162233, 1)
+corner_radius_top_left = 32
+corner_radius_top_right = 32
+corner_radius_bottom_right = 32
+corner_radius_bottom_left = 32
+
+[node name="Victory3" type="Node2D" unique_id=1181838058]
+script = ExtResource("1_7w0jc")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1874282985]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -61.0
+offset_top = -84.0
+offset_right = 1214.0
+offset_bottom = 732.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_bcy1w")
+stretch_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=1064790745]
+offset_left = 341.0
+offset_top = 11.0
+offset_right = 801.0
+offset_bottom = 213.0
+texture = ExtResource("3_sp6w6")
+
+[node name="PlayAgain" type="Button" parent="." unique_id=334786144]
+offset_left = 256.0
+offset_top = 424.0
+offset_right = 468.0
+offset_bottom = 508.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_flqon")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_15ee3")
+theme_override_styles/hover = SubResource("StyleBoxFlat_u1yty")
+theme_override_styles/focus = SubResource("StyleBoxFlat_msd2c")
+text = "Play Again
+"
+
+[node name="Next" type="Button" parent="." unique_id=1665152234]
+offset_left = 696.0
+offset_top = 426.0
+offset_right = 908.0
+offset_bottom = 510.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_flqon")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_15ee3")
+theme_override_styles/hover = SubResource("StyleBoxFlat_u1yty")
+theme_override_styles/focus = SubResource("StyleBoxFlat_msd2c")
+text = "Next"
+
+[node name="Label" type="Label" parent="." unique_id=63154004]
+offset_left = 449.0
+offset_top = 376.0
+offset_right = 727.0
+offset_bottom = 458.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_5dgg1")
+text = "Total Points:"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="PlayAgain" to="." method="_on_play_again_pressed"]
+[connection signal="pressed" from="Next" to="." method="_on_next_pressed"]

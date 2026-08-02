@@ -1,14 +1,15 @@
 [gd_scene format=3 uid="uid://i44410s5y50f"]
 
 [ext_resource type="Script" uid="uid://padrs4vsjo62" path="res://scripts/main_menu.gd" id="1_bqqt6"]
-[ext_resource type="Texture2D" uid="uid://bxe4dbx1ks8ke" path="res://Other/Screenshot (475).png" id="2_wu84c"]
+[ext_resource type="Texture2D" uid="uid://bfmuo3mfixdl0" path="res://Background/origbig.png" id="2_oa1go"]
 [ext_resource type="Texture2D" uid="uid://b2ohpo5v0wfxf" path="res://Other/Cool Text - Levels 513058065584612.png" id="3_rtw2f"]
 [ext_resource type="Texture2D" uid="uid://cd0kjlpd7qnvl" path="res://Menu/Levels/01.png" id="4_rtw2f"]
 [ext_resource type="Script" uid="uid://cdhjqh1itavch" path="res://scripts/button.gd" id="4_wu84c"]
 [ext_resource type="Texture2D" uid="uid://dnd7navc8vi84" path="res://Menu/Levels/02.png" id="5_oa1go"]
+[ext_resource type="Texture2D" uid="uid://bn54062omv4vn" path="res://Menu/Levels/03.png" id="6_oa1go"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5dgg1"]
-texture = ExtResource("2_wu84c")
+texture = ExtResource("2_oa1go")
 modulate_color = Color(0.40146014, 0.40146014, 0.40146014, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8ln24"]
@@ -158,6 +159,29 @@ icon = ExtResource("5_oa1go")
 icon_alignment = 1
 expand_icon = true
 
+[node name="level3" type="Button" parent="." unique_id=1593302064]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -53.0
+offset_top = -136.0
+offset_right = 86.0
+offset_bottom = -1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_gssvs")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rtw2f")
+theme_override_styles/hover = SubResource("StyleBoxFlat_oa1go")
+theme_override_styles/focus = SubResource("StyleBoxFlat_tbmy8")
+icon = ExtResource("6_oa1go")
+icon_alignment = 1
+expand_icon = true
+
 [node name="Button" type="Button" parent="." unique_id=253744863]
 offset_left = 24.0
 offset_top = 568.0
@@ -173,5 +197,6 @@ script = ExtResource("4_wu84c")
 
 [connection signal="pressed" from="level1" to="." method="_on_level_1_pressed"]
 [connection signal="pressed" from="level2" to="." method="_on_level_2_pressed"]
+[connection signal="pressed" from="level3" to="." method="_on_level_3_pressed"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button" to="Button" method="_on_back_pressed"]

@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://cdhjqh1itavch" path="res://scripts/button.gd" id="4_wu84c"]
 [ext_resource type="Texture2D" uid="uid://dnd7navc8vi84" path="res://Menu/Levels/02.png" id="5_oa1go"]
 [ext_resource type="Texture2D" uid="uid://bn54062omv4vn" path="res://Menu/Levels/03.png" id="6_oa1go"]
+[ext_resource type="Texture2D" uid="uid://bk0deym2il3ff" path="res://Menu/Levels/04.png" id="7_tbmy8"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5dgg1"]
 texture = ExtResource("2_oa1go")
@@ -166,10 +167,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -53.0
-offset_top = -136.0
-offset_right = 86.0
-offset_bottom = -1.0
+offset_left = -45.0
+offset_top = -132.0
+offset_right = 94.0
+offset_bottom = 3.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
@@ -179,6 +180,29 @@ theme_override_styles/pressed = SubResource("StyleBoxFlat_rtw2f")
 theme_override_styles/hover = SubResource("StyleBoxFlat_oa1go")
 theme_override_styles/focus = SubResource("StyleBoxFlat_tbmy8")
 icon = ExtResource("6_oa1go")
+icon_alignment = 1
+expand_icon = true
+
+[node name="level4" type="Button" parent="." unique_id=966643472]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 115.0
+offset_top = -131.0
+offset_right = 254.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_gssvs")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rtw2f")
+theme_override_styles/hover = SubResource("StyleBoxFlat_oa1go")
+theme_override_styles/focus = SubResource("StyleBoxFlat_tbmy8")
+icon = ExtResource("7_tbmy8")
 icon_alignment = 1
 expand_icon = true
 
@@ -198,5 +222,6 @@ script = ExtResource("4_wu84c")
 [connection signal="pressed" from="level1" to="." method="_on_level_1_pressed"]
 [connection signal="pressed" from="level2" to="." method="_on_level_2_pressed"]
 [connection signal="pressed" from="level3" to="." method="_on_level_3_pressed"]
+[connection signal="pressed" from="level4" to="." method="_on_level_4_pressed"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button" to="Button" method="_on_back_pressed"]

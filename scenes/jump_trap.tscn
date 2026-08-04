@@ -67,7 +67,7 @@ animations = [{
 }],
 "loop": 1,
 "name": &"jump",
-"speed": 7.0
+"speed": 5.0
 }]
 
 [node name="Area2D" type="Area2D" unique_id=1984781089]
@@ -83,6 +83,7 @@ position = Vector2(35, 171)
 scale = Vector2(3.4642856, 2.6785715)
 sprite_frames = SubResource("SpriteFrames_5dgg1")
 animation = &"jump"
-frame_progress = 0.00021356563
+autoplay = "jump"
+frame_progress = 0.5729456
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]

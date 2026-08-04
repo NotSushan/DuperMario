@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://tcmxkkqdm1n4" path="res://scenes/main_character.tscn" id="4_3n7tn"]
 [ext_resource type="PackedScene" uid="uid://utgxg0vbmhts" path="res://scenes/collectibles.tscn" id="5_8f67t"]
 [ext_resource type="PackedScene" uid="uid://b7dwrjwsvoxfo" path="res://scenes/finish.tscn" id="6_2vnbt"]
-[ext_resource type="Script" uid="uid://bhvk22hxw3hix" path="res://scenes/finish3.gd" id="7_ekyvo"]
+[ext_resource type="Script" uid="uid://dollurbbcbwwe" path="res://scenes/finish4.gd" id="7_5tkub"]
 [ext_resource type="PackedScene" uid="uid://dko6ahg30ligp" path="res://scenes/enemy.tscn" id="8_ivevn"]
 [ext_resource type="Script" uid="uid://bs2exytric8o1" path="res://scripts/fall.gd" id="9_j8vkp"]
 [ext_resource type="Texture2D" uid="uid://ce1viv1rpyiqk" path="res://Other/love-always-wins.png" id="10_oykdx"]
@@ -316,7 +316,7 @@ point_value = null
 
 [node name="Finish4" parent="Scene Objects" unique_id=1134903558 instance=ExtResource("6_2vnbt")]
 position = Vector2(2235, 54)
-script = ExtResource("7_ekyvo")
+script = ExtResource("7_5tkub")
 
 [node name="Enemies" type="Node" parent="Scene Objects" unique_id=323263082]
 

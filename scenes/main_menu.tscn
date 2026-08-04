@@ -8,6 +8,8 @@
 [ext_resource type="Texture2D" uid="uid://dnd7navc8vi84" path="res://Menu/Levels/02.png" id="5_oa1go"]
 [ext_resource type="Texture2D" uid="uid://bn54062omv4vn" path="res://Menu/Levels/03.png" id="6_oa1go"]
 [ext_resource type="Texture2D" uid="uid://bk0deym2il3ff" path="res://Menu/Levels/04.png" id="7_tbmy8"]
+[ext_resource type="Texture2D" uid="uid://b47b7sjh483cn" path="res://Menu/Levels/05.png" id="8_5dd4i"]
+[ext_resource type="Texture2D" uid="uid://cjkpp7x834lff" path="res://Menu/Buttons/Previous.png" id="9_lgwnu"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5dgg1"]
 texture = ExtResource("2_oa1go")
@@ -63,28 +65,28 @@ corner_radius_bottom_right = 32
 corner_radius_bottom_left = 32
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jk1qb"]
-bg_color = Color(0.94509804, 0.93333334, 0.43137255, 1)
+bg_color = Color(0, 0, 0, 1)
 corner_radius_top_left = 64
 corner_radius_top_right = 64
 corner_radius_bottom_right = 64
 corner_radius_bottom_left = 64
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5dd4i"]
-bg_color = Color(0.3407087, 0.33821473, 4.813075e-08, 1)
+bg_color = Color(0.15608528, 0.15399587, 3.6098065e-08, 1)
 corner_radius_top_left = 64
 corner_radius_top_right = 64
 corner_radius_bottom_right = 64
 corner_radius_bottom_left = 64
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lgwnu"]
-bg_color = Color(0.4142362, 0.4095914, 9.62615e-08, 1)
+bg_color = Color(1, 1, 1, 1)
 corner_radius_top_left = 64
 corner_radius_top_right = 64
 corner_radius_bottom_right = 64
 corner_radius_bottom_left = 64
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5dgg1"]
-bg_color = Color(0.3407087, 0.33821473, 4.813075e-08, 1)
+bg_color = Color(0, 0, 0, 1)
 corner_radius_top_left = 64
 corner_radius_top_right = 64
 corner_radius_bottom_right = 64
@@ -206,22 +208,49 @@ icon = ExtResource("7_tbmy8")
 icon_alignment = 1
 expand_icon = true
 
+[node name="level5" type="Button" parent="." unique_id=1690918065]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 277.0
+offset_top = -132.0
+offset_right = 416.0
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_gssvs")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rtw2f")
+theme_override_styles/hover = SubResource("StyleBoxFlat_oa1go")
+theme_override_styles/focus = SubResource("StyleBoxFlat_tbmy8")
+icon = ExtResource("8_5dd4i")
+icon_alignment = 1
+expand_icon = true
+
 [node name="Button" type="Button" parent="." unique_id=253744863]
+texture_filter = 1
 offset_left = 24.0
-offset_top = 568.0
-offset_right = 130.0
-offset_bottom = 631.0
+offset_top = 541.0
+offset_right = 123.0
+offset_bottom = 637.0
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_styles/normal = SubResource("StyleBoxFlat_jk1qb")
 theme_override_styles/pressed = SubResource("StyleBoxFlat_5dd4i")
 theme_override_styles/hover = SubResource("StyleBoxFlat_lgwnu")
 theme_override_styles/focus = SubResource("StyleBoxFlat_5dgg1")
-text = "Back"
+icon = ExtResource("9_lgwnu")
+icon_alignment = 1
+expand_icon = true
 script = ExtResource("4_wu84c")
 
 [connection signal="pressed" from="level1" to="." method="_on_level_1_pressed"]
 [connection signal="pressed" from="level2" to="." method="_on_level_2_pressed"]
 [connection signal="pressed" from="level3" to="." method="_on_level_3_pressed"]
 [connection signal="pressed" from="level4" to="." method="_on_level_4_pressed"]
+[connection signal="pressed" from="level5" to="." method="_on_level_4_pressed"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button" to="Button" method="_on_back_pressed"]

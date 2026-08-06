@@ -4,6 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bxe4dbx1ks8ke" path="res://Other/Screenshot (475).png" id="1_tr1eg"]
 [ext_resource type="Texture2D" uid="uid://b34qh3emi4x6g" path="res://Other/cooltext512888396778768.png" id="2_oesg4"]
 [ext_resource type="Script" uid="uid://bdnpi3gd0ke8e" path="res://scripts/audio_control.gd" id="3_ejg1c"]
+[ext_resource type="Texture2D" uid="uid://cmi5vf8i72w0j" path="res://Menu/Buttons/Volume.png" id="5_ljahu"]
 [ext_resource type="Script" uid="uid://buxtoblaj21g" path="res://scripts/fullscreen_control.gd" id="6_vqc2j"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5dgg1"]
@@ -46,6 +47,14 @@ thickness = 6
 [sub_resource type="StyleBoxLine" id="StyleBoxLine_l8guw"]
 color = Color(0.32642248, 0.5324062, 1, 1)
 thickness = 6
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5dgg1"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l8guw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gssvs"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_lgk4h"]
 
 [node name="First Menu" type="Control" unique_id=1076204836]
 layout_mode = 3
@@ -206,13 +215,29 @@ step = 0.1
 value = 0.8
 script = ExtResource("3_ejg1c")
 
+[node name="Button" type="Button" parent="Options/AudioControl" unique_id=565811443]
+texture_filter = 1
+layout_mode = 0
+offset_left = -103.0
+offset_top = -9.0
+offset_right = -9.0
+offset_bottom = 66.0
+theme_override_styles/normal = SubResource("StyleBoxEmpty_5dgg1")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_l8guw")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_gssvs")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_lgk4h")
+icon = ExtResource("5_ljahu")
+icon_alignment = 1
+expand_icon = true
+
 [node name="FullscreenControl" type="CheckButton" parent="Options" unique_id=1705298437]
 layout_mode = 0
 offset_left = 104.0
 offset_top = 137.0
-offset_right = 473.0
-offset_bottom = 241.0
+offset_right = 466.0
+offset_bottom = 251.0
 theme_override_font_sizes/font_size = 40
+keep_pressed_outside = true
 text = "Fullscreen"
 script = ExtResource("6_vqc2j")
 

@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cyjxyeadvuwig"]
 
-[ext_resource type="Script" uid="uid://moqewjuwfc5u" path="res://scripts/victory3.gd" id="1_ael2r"]
+[ext_resource type="Script" uid="uid://d2as30jndxbw1" path="res://scripts/victory4.gd" id="1_ael2r"]
 [ext_resource type="Texture2D" uid="uid://bdhxp5l47tftg" path="res://Other/Gemini_Generated_Image_eik5x0eik5x0eik5.jpeg" id="2_3bw3m"]
 [ext_resource type="Texture2D" uid="uid://drjfyidxwvgy1" path="res://Other/Cool Text - Victory 512932839600344.png" id="3_im1rc"]
 

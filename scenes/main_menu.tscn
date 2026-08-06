@@ -251,6 +251,6 @@ script = ExtResource("4_wu84c")
 [connection signal="pressed" from="level2" to="." method="_on_level_2_pressed"]
 [connection signal="pressed" from="level3" to="." method="_on_level_3_pressed"]
 [connection signal="pressed" from="level4" to="." method="_on_level_4_pressed"]
-[connection signal="pressed" from="level5" to="." method="_on_level_4_pressed"]
+[connection signal="pressed" from="level5" to="." method="_on_level_5_pressed"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button" to="Button" method="_on_back_pressed"]

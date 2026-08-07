@@ -1,0 +1,58 @@
+[gd_scene format=3 uid="uid://bh4hvdpsvoyjw"]
+
+[ext_resource type="Script" uid="uid://cfmo1i8pdfg6p" path="res://scenes/feature.gd" id="1_eetr3"]
+[ext_resource type="Texture2D" uid="uid://da7uc255k8vpm" path="res://Background/backgroundfordj.png" id="1_mint0"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5dgg1"]
+bg_color = Color(0.89266235, 0.8856591, 1.540184e-06, 1)
+corner_radius_top_left = 32
+corner_radius_top_right = 32
+corner_radius_bottom_right = 32
+corner_radius_bottom_left = 32
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mint0"]
+bg_color = Color(0.2674467, 0.2647821, 9.62615e-08, 1)
+corner_radius_top_left = 32
+corner_radius_top_right = 32
+corner_radius_bottom_right = 32
+corner_radius_bottom_left = 32
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_eetr3"]
+bg_color = Color(0.60381216, 0.59836847, 0, 1)
+corner_radius_top_left = 32
+corner_radius_top_right = 32
+corner_radius_bottom_right = 32
+corner_radius_bottom_left = 32
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rfjnh"]
+bg_color = Color(0.89266235, 0.8856591, 1.540184e-06, 1)
+corner_radius_top_left = 32
+corner_radius_top_right = 32
+corner_radius_bottom_right = 32
+corner_radius_bottom_left = 32
+
+[node name="Node2D" type="Node2D" unique_id=1626427228]
+script = ExtResource("1_eetr3")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=739891536]
+offset_right = 1152.0
+offset_bottom = 643.0
+texture = ExtResource("1_mint0")
+expand_mode = 1
+
+[node name="Button" type="Button" parent="." unique_id=1490312094]
+offset_left = 989.0
+offset_top = 513.0
+offset_right = 1144.0
+offset_bottom = 582.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxFlat_5dgg1")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mint0")
+theme_override_styles/hover = SubResource("StyleBoxFlat_eetr3")
+theme_override_styles/focus = SubResource("StyleBoxFlat_rfjnh")
+text = "Continue
+
+"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

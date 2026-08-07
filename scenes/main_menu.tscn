@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://bn54062omv4vn" path="res://Menu/Levels/03.png" id="6_oa1go"]
 [ext_resource type="Texture2D" uid="uid://bk0deym2il3ff" path="res://Menu/Levels/04.png" id="7_tbmy8"]
 [ext_resource type="Texture2D" uid="uid://b47b7sjh483cn" path="res://Menu/Levels/05.png" id="8_5dd4i"]
+[ext_resource type="Texture2D" uid="uid://cl4tibpcms04r" path="res://Menu/Levels/06.png" id="9_flqon"]
 [ext_resource type="Texture2D" uid="uid://cjkpp7x834lff" path="res://Menu/Buttons/Previous.png" id="9_lgwnu"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_5dgg1"]
@@ -231,6 +232,29 @@ icon = ExtResource("8_5dd4i")
 icon_alignment = 1
 expand_icon = true
 
+[node name="level6" type="Button" parent="." unique_id=1783830627]
+texture_filter = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -376.0
+offset_top = 20.0
+offset_right = -237.0
+offset_bottom = 155.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_gssvs")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_rtw2f")
+theme_override_styles/hover = SubResource("StyleBoxFlat_oa1go")
+theme_override_styles/focus = SubResource("StyleBoxFlat_tbmy8")
+icon = ExtResource("9_flqon")
+icon_alignment = 1
+expand_icon = true
+
 [node name="Button" type="Button" parent="." unique_id=253744863]
 texture_filter = 1
 offset_left = 24.0
@@ -252,5 +276,6 @@ script = ExtResource("4_wu84c")
 [connection signal="pressed" from="level3" to="." method="_on_level_3_pressed"]
 [connection signal="pressed" from="level4" to="." method="_on_level_4_pressed"]
 [connection signal="pressed" from="level5" to="." method="_on_level_5_pressed"]
+[connection signal="pressed" from="level6" to="." method="_on_level_6_pressed"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button" to="Button" method="_on_back_pressed"]

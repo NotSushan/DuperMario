@@ -6,5 +6,5 @@ func _on_body_entered(body: Node2D) -> void:
 	if body.name == "CharacterBody2D":
 		GameManager.double_jump_unlocked = true
 		GameManager.total_points = total_points  # Pass whatev...
-		get_tree().change_scene_to_file.call_deferred("res://scenes/victory_5.tscn")
+		get_tree().change_scene_to_file.call_deferred("res://scenes/victory_6.tscn")
 		
